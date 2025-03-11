@@ -1,0 +1,43 @@
+class IT2023bit151{
+
+	public static void main(String[] args)
+	{
+		System.out.println(reverse("Utasav 2025"));
+		System.out.println(sumOfDigits(170225));
+	}
+	
+// reverse of a given string
+	public static String reverse(String inputString)
+	{
+	   char[] str = inputString.toCharArray();
+	   return rev1(str,0,str.length-1);
+	}
+	public static String rev1(char[] str,int size, int newstr)
+	{
+	    if(newstr<0)
+	    {
+	      return "";
+	    }
+	    String str2="";
+	    str2+=str[newstr];
+	    return str2 + rev1(str,size,newstr-1);
+	}
+	
+	
+// sum of digit
+   public static int sumOfDigits(int number)
+   {
+      if(number==0)
+      {
+        return 0;
+      }
+        return (number%10)+ sumOfDigits(number/10);
+   }
+   
+   
+   
+// palindrome number
+    public static isPalindrome(String inputString)
+    {
+    
+}
